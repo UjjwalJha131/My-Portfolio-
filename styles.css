@@ -40,10 +40,12 @@ div.col-12 {
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
-  background-image: linear-gradient(rgb(0, 0, 0) 70%, rgba(97, 2, 2));
+  background-color: #4169e1 !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: auto;
+  border-bottom: 2px solid ghostwhite;
 }
 
 .Navbar-logo {
@@ -52,16 +54,15 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
 }
 
 a.nav-link {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: ghostwhite !important;
-  font-family: verdana, Arial, sans-serif;
-  transition: 0.1s;
-  padding: 5px;
+  font-family: "sans-serif";
+  transition: 0.2s ease-in-out;
+  letter-spacing: 1.3px;
 }
 
 a.nav-link:hover {
-  color: #ff0000 !important;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   filter: brightness(1.5);
 }
 
@@ -81,22 +82,20 @@ nav-link:active {
 /*Top-section with avatar start*/
 
 .Top-bg-cont {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6) 95%,
-      rgba(97, 2, 2)
-    ),
-    url("https://images.pexels.com/photos/785429/pexels-photo-785429.jpeg?cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)),
+    url("https://cdn.pixabay.com/photo/2016/11/22/14/42/globe-1849404_960_720.png");
   background-size: cover;
+  background-position: 40% 40%;
+  height: 75vh;
   min-width: 100vw;
   width: 100%;
 }
 
-@media only screen and (max-width: 450px) {
+/*@media only screen and (max-width: 450px) {
   .Top-bg-cont {
-    background-image: linear-gradient(rgb(0, 0, 0, 1) 95%, rgba(97, 2, 2));
+    background: black;
   }
-}
+}*/
 
 .Top-image {
   width: 120px;
@@ -105,17 +104,18 @@ nav-link:active {
 }
 
 .name {
-  font-size: 2rem;
+  font-size: 2.7rem;
   font-weight: 500;
   color: ghostwhite;
   letter-spacing: 1.2px;
 }
 
 #ujjwal {
-  color: #ff0000;
-  font-size: 2.7rem;
+  color: #4169e1;
+  font-size: 3.3rem;
   font-weight: 400;
   letter-spacing: 1.2px;
+  filter: brightness(1.5);
 }
 
 .pl-0 {
@@ -124,17 +124,26 @@ nav-link:active {
 
 .para {
   font-size: 2.2rem;
-  color: #ffffff;
+  color: white;
   text-align: center;
   padding: 0 10px;
   letter-spacing: 1.2px;
 }
 
+.fsd {
+  color: #4169e1;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  filter: brightness(1.5);
+}
+
 .cv-button {
-  color: #ff0000;
+  color: ghostwhite;
   font-size: 1.2rem;
+  letter-spacing: 1px;
   outline: none;
-  border: 2px solid #ff0000;
+  border: 2px solid #4169e1;
   border-radius: 10px;
   width: 140px;
   height: 40px;
@@ -151,48 +160,70 @@ nav-link:active {
   background-position: 0 0;
   border: none;
   outline: none;
-  box-shadow: inset 2px 2px 7px #ff0000, inset -2px -2px 7px #ff0000;
+  box-shadow: inset 2px 2px 8px #4169e1, inset -2px -2px 8px #4169e1;
 }
 
 /*About me-section start*/
 
 .About-Me-bg-container {
-  background-image: linear-gradient(rgb(0, 0, 0, 1) 90%, rgba(97, 2, 2));
+  background-color: #4169e1;
   background-size: cover;
   min-width: 100vw;
   width: 100%;
+  border-bottom: 1px solid #000;
 }
 
 .head {
-  font-size: 1.8rem;
-  font-weight: 300;
-  font-family: "Roboto";
-  color: #ff0000;
+  font-size: 2.3rem;
+  font-weight: 500;
+  font-family: "sans-serif";
+  color: rgb(0, 0, 0);
 }
 
 .Description {
-  font-size: 25px;
+  font-size: 24px;
   color: ghostwhite;
+  font-weight: 200;
+  letter-spacing: 1.9px;
+  font-family: "satisfy";
 }
 
 /*skill section starts*/
 
 .Skill-bg-container {
-  background-image: linear-gradient(rgb(0, 0, 0, 1) 90%, rgba(97, 2, 2));
+  background-color: #4169e1;
   background-size: cover;
+  height: auto;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px !important;
 }
 
-/*class card2 of project section was used here*/
+.skill-cards {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  margin: 13px -3px !important;
+  margin-bottom: 30px;
+  background-color: #4169e1;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 3px 3px 3px #000261, inset 2px 2px 10px #000261,
+    inset -3px -3px 10px #000261;
+}
 
-.Skill-image {
-  border-bottom: 1px solid #ff0000;
+.skill-cards:hover {
+  transform: scale(1.1);
+}
+
+.skill-icons:python-dark {
+  border-bottom: 1px solid ghostwhite;
 }
 
 .skill-card-head {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: whitesmoke;
-  filter: brightness(1.1);
-  letter-spacing: 1.5px;
+  filter: brightness(2);
+  letter-spacing: 1.7px;
 }
 
 /*skill section end*/
@@ -200,40 +231,41 @@ nav-link:active {
 /*Project section starts*/
 
 .My-projects-container {
-  background-image: linear-gradient(rgb(0, 0, 0, 1) 96%, rgb(92, 2, 2));
+  background-color: #4169e1;
   background-size: cover;
+  height: auto;
 }
 
-.cards2 {
+.project-cards {
   width: auto;
-  height: auto;
+  height: 260px;
   padding: 5px;
-  margin: 0 -5px;
-  margin-bottom: 30px;
-  background-color: black;
+  margin: 0 3px !important;
+  margin-bottom: 30px !important;
+  background-color: #4169e1;
   border-radius: 15px;
   transition: 0.3s ease-in-out;
-  box-shadow: 2px 2px 5px #ff0000, inset 2px 2px 10px #ff0000,
-    inset -3px -3px 10px #ff0000;
+  box-shadow: 3px 3px 3px #000261, inset 2px 2px 10px #000261,
+    inset -3px -3px 10px #000261;
 }
 
-.cards2:hover {
+.project-cards:hover {
   transform: scale(1.1);
 }
 
 .project-image {
   width: 100%;
-  height: 100%;
+  height: 125px;
   border-radius: 15px;
-  border-bottom: 1px solid #ff0000;
+  border-bottom: 1px solid black;
 }
 
 .project-card-heading {
-  font-size: 1.3rem;
-  color: rgb(236, 42, 42);
+  font-size: 1.5rem;
+  color: ghostwhite;
   text-align: center;
   letter-spacing: 1.5px;
-  border-bottom: 1px solid #ff0000;
+  border-bottom: 1px solid black;
   border-radius: 20px;
 }
 
@@ -248,7 +280,7 @@ nav-link:active {
 /*Footer*/
 
 .footer-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("https://cdn.pixabay.com/photo/2016/11/28/01/34/laptop-1864126_960_720.jpg");
   background-size: cover;
   width: 100vw;
@@ -284,6 +316,7 @@ nav-link:active {
   font-size: 21px;
   filter: brightness(2);
   color: ghostwhite;
+  letter-spacing: 1.2px;
 }
 
 .contact-list {
@@ -291,17 +324,32 @@ nav-link:active {
   padding-right: 20rem;
 }
 
-#icon {
-  width: 30px;
-  height: 30px;
-  color: #ff0000;
+.icon {
+  margin-top: 10px;
 }
 
 hr {
   width: 100vw;
   height: 1px;
-  background-color: #ff0000;
+  background-color: #4169e1;
   margin-top: 1000px;
+}
+
+.cards {
+  padding: 0 50px !important;
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  height: 60px;
+  width: 300px !important;
+  margin: 10px 0;
+  box-shadow: 4px 4px 5px rgb(47, 53, 105), inset 5px 5px 10px royalblue,
+    inset -5px -5px 10px royalblue;
+  transition: all 0.4s;
+}
+
+.cards:hover {
+  transform: scale(1.1);
 }
 
 .copyright {
