@@ -255,6 +255,12 @@ nav-link:active {
     inset -3px -3px 10px #000261;
 }
 
+@media only screen and (max-width: 450px) {
+  .project-cards{
+    height: auto;
+  }
+}
+
 .project-cards:hover {
   transform: scale(1.1);
 }
