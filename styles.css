@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lobster&family=Poppins:ital,wght@0,500;0,600;1,400&display=swap");
 
 @font-face {
   font-family: "Pacifico";
@@ -51,16 +51,14 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
   height: auto;
   border-bottom: 2px solid ghostwhite;
 }
-
-.Navbar-logo {
-  margin-left: auto;
-  border-radius: 50%;
+.logo {
+  height: 50px;
 }
 
 a.nav-link {
   font-size: 1.4rem;
   color: black !important;
-  font-family: "sans-serif";
+  font-family: "Helvetica";
   transition: 0.2s ease-in-out;
   letter-spacing: 1.3px;
 }
@@ -88,8 +86,8 @@ nav-link:active {
 .Top-bg-cont {
   background-image: linear-gradient(
       180deg,
-      rgba(1, 173, 168, 0.7),
-      rgba(1, 173, 168, 0.7)
+      rgba(1, 173, 168, 0.9),
+      rgba(1, 173, 168, 0.9)
     ),
     url("https://cdn.pixabay.com/photo/2015/08/11/22/43/teal-885329_960_720.png");
   display: flex;
@@ -119,10 +117,11 @@ nav-link:active {
 .bio {
   text-align: center;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   border-top: 10px white;
   padding: 20px;
+  margin-top: 75px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -136,27 +135,23 @@ nav-link:active {
 }
 
 .name {
-  font-size: 2.7rem;
-  font-weight: 500;
-  color: white;
-  letter-spacing: 1.2px;
-}
-
-#ujjwal {
-  color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
+  color: white;
   letter-spacing: 1.2px;
-  filter: brightness(1.5);
   font-family: "Helvetica";
 }
 
-.pl-0 {
-  margin-left: 10px;
+#ujjwal {
+  color: black;
+  font-size: 2.9rem;
+  letter-spacing: 1.2px;
+  filter: brightness(1.5);
+  font-family: "Lobster", cursive;
 }
 
 .para {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: white;
   text-align: center;
   letter-spacing: 1.2px;
@@ -164,8 +159,7 @@ nav-link:active {
 
 .fsd {
   color: white;
-  font-size: 2.4rem;
-  font-weight: 400;
+  font-size: 1.5rem;
   letter-spacing: 1.2px;
   filter: brightness(1.5);
 }
@@ -178,20 +172,23 @@ nav-link:active {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .Top-image {
     display: none;
   }
 }
 
 .cv-button {
-  color: ghostwhite;
-  font-size: 1.2rem;
+  color: black;
+  font-family: "Helvetica";
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 1px;
   outline: none;
-  border: 2px solid #4169e1;
-  border-radius: 10px;
-  width: 140px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 5px;
+  width: 130px;
   height: 40px;
   padding: 5px;
   background-color: transparent;
@@ -199,6 +196,8 @@ nav-link:active {
   background-size: 100% 200%;
   background-position: 100% 100%;
   transition: 0.4s;
+  box-shadow: 3px 3px 7px rgb(3, 58, 56), inset 4px 4px 8px ghostwhite,
+    inset -4px -4px 8px ghostwhite;
 }
 
 .cv-button:hover {
@@ -206,50 +205,73 @@ nav-link:active {
   background-position: 0 0;
   border: none;
   outline: none;
-  box-shadow: inset 2px 2px 8px #4169e1, inset -2px -2px 8px #4169e1;
+  box-shadow: inset 2px 2px 8px ghostwhite, inset -2px -2px 8px ghostwhite;
 }
 
 /*About me-section start*/
 
 .About-Me-bg-container {
-  background-color: #4169e1;
+  background-color: #ceeaee;
   background-size: cover;
   min-width: 100vw;
-
   border-bottom: 1px solid #000;
+  padding: 15px;
+  text-align: left;
 }
 
-.head {
-  font-size: 2.3rem;
-  font-weight: 500;
-  font-family: "sans-serif";
-  color: ghostwhite;
+.main-heading {
+  font-size: 32px;
+  color: black;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .main-heading {
+    padding-left: 15px;
+  }
+  .Description {
+    margin-left: -11px;
+  }
 }
 
 .Description {
-  font-size: 24px;
-  color: ghostwhite;
+  padding-left: 30px;
+  font-size: 20px;
+  color: black;
   font-weight: 200;
-  letter-spacing: 1.9px;
+  letter-spacing: 1px;
   font-family: "satisfy";
+  font-family: "Helvetica";
 }
 
 /*skill section starts*/
 
 .Skill-bg-container {
-  background-color: #0c0404;
+  background-image: linear-gradient(
+      180deg,
+      #17454de6,
+      rgba(23, 82, 80, 0.9)
+    
+    ),
+    url("https://cdn.pixabay.com/photo/2017/10/22/09/02/training-2877134_960_720.jpg");
   background-size: cover;
   height: auto;
   border-bottom: 1px solid black;
-  padding-bottom: 30px !important;
+  padding: 15px !important;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
-.page-headings {
-  color: white;
-  padding-top: 30px;
-  padding-left: 30px;
+#page-heading {
+  font-size: 32px;
+  color: ghostwhite;
+  padding-left: 32px;
+  padding-top: 8px;
+  font-family: sans-serif;
+  font-weight: normal;
 }
 
 .range-container {
@@ -259,11 +281,13 @@ nav-link:active {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 30px;
+  padding-top: 15px;
 }
 
 .section1 {
   display: flex;
   flex-direction: column;
+  font-weight: 400;
 }
 
 .section2 {
@@ -281,13 +305,27 @@ nav-link:active {
   min-width: 40vw;
   height: 25px;
   text-align: center;
-  background: lightgray;
+  background: ghostwhite;
   color: lavender;
   letter-spacing: 1.3px;
   margin: 2px 8px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+
 }
 
 @media only screen and (max-width: 450px) {
+  #page-heading {
+    font-size: 28px;
+    color: white;
+    padding-top: 30px;
+    margin-left: -8px;
+  }
+
+  .range-container {
+    padding: 15px;
+    padding-top: 15px;
+  }
   .range {
     width: 73vw;
   }
@@ -335,6 +373,16 @@ nav-link:active {
 }
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
+  .page-headings {
+    font-size: 28px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .range-container {
+    padding: 30px;
+    padding-top: 15px;
+  }
   .range {
     width: 85vw;
   }
@@ -381,97 +429,88 @@ nav-link:active {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .range-container {
+    flex-direction: row;
+  }
+}
+
 .html {
   width: 32vw;
   height: 25px;
   background: #d65637;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  color: black;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .css {
   width: 28vw;
   height: 25px;
   background: #2f86b5;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  color: black;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .bootstrap {
   width: 32vw;
   height: 25px;
   background: #6f19e0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .js {
   width: 24vw;
   height: 25px;
   background: #eed950;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  color: black;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .react {
   width: 28vw;
   height: 25px;
   background: darkturquoise;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  color: black;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .node {
   width: 32vw;
   height: 25px;
   background: #568938;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  color: black;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .sql {
   width: 36vw;
   height: 25px;
   background: #4daade;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  color: black;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .mongo {
   width: 32vw;
   height: 25px;
   background: #033632;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 .python {
   width: 20vw;
   height: 25px;
   background: #425c7a;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-@media only screen and (max-width: 450px) {
-  .skill-cards {
-    width: 175px;
-  }
-}
-
-.skill-cards:hover {
-  transform: scale(1.1);
-}
-
-.skill-icons:python-dark {
-  border-bottom: 1px solid ghostwhite;
-}
-
-.skill-card-head {
-  font-size: 1.3rem;
-  color: whitesmoke;
-  filter: brightness(2);
-  letter-spacing: 1.7px;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
 }
 
 /*skill section end*/
@@ -479,35 +518,63 @@ nav-link:active {
 /*Project section starts*/
 
 .My-projects-container {
-  background-color: #4169e1;
+ background-image: linear-gradient(to bottom,
+ #02a7a3 50%,
+  rgba(206,234,238,0.7)
+  );
   background-size: cover;
   height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page-headings2 {
+  font-size: 32px;
+  color: ghostwhite;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  font-family: sans-serif;
+  font-weight: normal;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .project-cards {
   width: auto;
-  height: 260px;
+  height: 275px;
   padding: 5px;
-  margin: 0 3px !important;
   margin-bottom: 30px !important;
   background-color: #4169e1;
   border-radius: 15px;
   transition: 0.3s ease-in-out;
-  box-shadow: 3px 3px 3px #000261, inset 2px 2px 10px #000261,
-    inset -3px -3px 10px #000261;
+  box-shadow: 5px 5px 5px rgb(2, 43, 43), inset 5px 5px 10px ghostwhite,
+    inset -5px -5px 10px ghostwhite;
 }
 
 @media only screen and (max-width: 450px) {
   .project-cards {
     height: auto;
   }
+  .card-container {
+    margin-left: -10px;
 }
-
+.page-headings2 {
+  margin-left: -20px;
+}
+}
 .project-cards:hover {
   transform: scale(1.1);
 }
 
 .project-image {
+  width: 100%;
   height: 125px;
   border-radius: 15px;
   border-bottom: 1px solid black;
@@ -525,18 +592,28 @@ nav-link:active {
 .tech {
   color: ghostwhite;
   font-size: 18px;
-  word-spacing: 10px;
-  text-align: center;
+  word-spacing: 5px;
+  text-align: left;
   letter-spacing: 1px;
 }
 
 /*Footer*/
 
 .footer-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(
+    #02a7a3 30%,
+    rgba(206,234,238,0.7)
+    ),
     url("https://cdn.pixabay.com/photo/2016/11/28/01/34/laptop-1864126_960_720.jpg");
   background-size: cover;
   width: 100vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Helvetica";
+  overflow: hidden;
 }
 
 .footer-image {
@@ -545,69 +622,59 @@ nav-link:active {
   border-radius: 50%;
 }
 
-.contact-list {
-  list-style: none;
+.contact-card {
+  width: 100vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#links {
-  text-decoration: none;
-  color: #ff0000;
+@media screen and (max-width: 800px) {
+  .contact-card {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: -15px;
+  }
 }
 
-#links:hover {
-  transform: scale(1.2);
-}
-
-.contact-heading {
-  font-size: 26px;
-  color: #ff0000;
-  font-weight: normal;
-  filter: brightness(1.3);
+.items-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
 }
 
 .contact-para {
+  margin-top: 15px;
+  padding-left: 10px;
   font-size: 21px;
   filter: brightness(2);
-  color: ghostwhite;
+  color: white;
   letter-spacing: 1.2px;
 }
 
-.contact-list {
-  list-style: none;
-  padding-right: 20rem;
-}
-
-.icon {
-  margin-top: 10px;
-}
-
-hr {
+#hr {
   width: 100vw;
-  height: 1px;
-  background-color: #4169e1;
-  margin-top: 1000px;
-}
-
-.cards {
-  padding: 0 50px !important;
-  position: relative;
+  height: 2px;
   background-color: black;
-  border-radius: 10px;
-  height: 60px;
-  width: 300px !important;
-  margin: 10px 0;
-  box-shadow: 4px 4px 5px rgb(47, 53, 105), inset 5px 5px 10px royalblue,
-    inset -5px -5px 10px royalblue;
-  transition: all 0.4s;
-}
-
-.cards:hover {
-  transform: scale(1.1);
+  margin-top: 50px;
 }
 
 .copyright {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.copyright-para {
   font-size: 16px;
   color: ghostwhite;
+  margin-top: 6px;
+  padding-left: 10px;
 }
 
 /*Footer*/

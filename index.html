@@ -14,9 +14,9 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <div class="icon-container d-flex flex-row justify-content-center">
+    <div class="icon-container items justify-content-center">
       <a class="navbar-brand pl-0 ml-0 head text-center" href="#">
-        <iconify-icon icon="emojione-monotone:lion-face" style="color: teal;" width="50" height="50"></iconify-icon>
+        <img src="images/mylogo.png" alt="logo" class="logo">
       </a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -25,8 +25,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-link active" href="#"><iconify-icon icon="material-symbols:home" style="color: teal; " width="33"
-            height="33""></iconify-icon><span
+        <a class="nav-link active" href="#"><iconify-icon icon="material-symbols:home" style="color: black; "
+            width="33" height="33""></iconify-icon><span
             class=" sr-only">(current)</span></a>
         <a class="nav-link active" href="#About">About Me<span class="sr-only">(current)</span></a>
         <a class="nav-link active" href="#Skills">Skills<span class="sr-only">(current)</span></a>
@@ -45,11 +45,11 @@
         </h1>
         <p class="para"><span class="fsd">A Web Developer</span></p>
         <div>
-          <button class="cv-button">Contact Me</button>
+          <a href="signup.html"><button class="cv-button">Contact Me</button></a>
           <button class="cv-button">Download CV</button>
         </div>
       </div>
-      
+
     </div>
     <div class="">
       <img src="images/myImage.png" alt="avatar" class="Top-image" />
@@ -60,36 +60,22 @@
   </div>
   </div>
   <!--  top Section with avatar end -->
-  <div id="About">
-    <div class="container-fluid About-Me-bg-container d-flex flex-column justify-content-center pt-3 pb-5 pl-3">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="head pt-2 pl-3 ml-md-3">
-            About Me
-          </h1>
+  <div class="About-Me-bg-container">
 
-          <p class="Description pt-2 pl-3 ml-md-3">
-            My name is Ujjwal Jha, and I am currently looking for a job in
-            frontend development. I have 3 years of experience working as a
-            frontend developer. I have a vocational course certificate in
-            Full Stack development.
-          </p>
-          <p class="Description pt-0 pl-3 ml-md-3">
-            I am a dedicated person with a family on four. I enjoy reading
-            and the knowledge and perspective that my reading gives me have
-            strenghten my teaching skills.
-            I am a dedicated person with a family on four. I enjoy reading
-            and the knowledge and perspective that my reading gives me have
-            strenghten my teaching skills.
-            I am a dedicated person with a family on four. I enjoy reading
-            and the knowledge and perspective that my reading gives me have
-            strenghten my teaching skills.
-          </p>
-        </div>
-      </div>
-    </div>
+    <h1 class="main-heading">
+      About Me
+    </h1>
+
+    <p class="Description">
+      My name is Ujjwal. I am a beginner Web Developer and looking for my first break in the field. I have an Industry ready Full Stack Developer certificate from NxtWave Disruptive Technologies Private Limited.
+    </p>
+    <p class="Description">
+      I am a dedicated person with love for technology. I enjoy reading and the knowledge and perspective that my reading gives me have strenghten my technical skills.
+    </p>
+    <p class="Description">I have worked on a lot of real world projects. I have alo completed my Responsive Web Design and Front End Library Certification offered by FreeCodeCamp.
+    </p>
   </div>
-  </div>
+
   <!--  About Me Section of My Portfolio -->
 
 
@@ -99,7 +85,7 @@
 
   <div class="Skill-bg-container">
 
-    <h1 class="page-headings">Skills :</h1>
+    <h1 id="page-heading">Skills & Tools I Know :</h1>
 
     <div class="range-container">
       <div class="section1">
@@ -132,16 +118,16 @@
           </div>
         </div>
 
-        
-          <div class="ranges">
-            <iconify-icon icon="logos:react" style="color: red;" width="30" height="30"></iconify-icon>
-            <div class="range">
-              <div class="react">React</div>
-            </div>
-          </div>
 
+        <div class="ranges">
+          <iconify-icon icon="logos:react" style="color: red;" width="30" height="30"></iconify-icon>
+          <div class="range">
+            <div class="react">React</div>
+          </div>
         </div>
-        <div class="section2">
+
+      </div>
+      <div class="section2">
         <div class="ranges">
           <iconify-icon icon="skill-icons:nodejs-dark" style="color: red;" width="30" height="30"></iconify-icon>
           <div class="range">
@@ -179,28 +165,19 @@
 
   <!-- Project section of My Portfolio -->
 
-  <div id="Projects">
+  
 
     <div class="My-projects-container p-sm-4 d-flex">
-      <div class="container-fluid text-center">
-        <div class="row">
-         
-            <h1 class="page-headings">My Projects :</h1>
-        
-
+      
+            
+          <h1 class="page-headings2">My Projects :</h1>
+       
+          <div class="card-container">
           <div class="col-md-6 col-lg-2 col-xs-12">
             <div class="project-cards">
               <img src="images/goa.png" alt="Goa" class="project-image" />
               <h2 class="project-card-heading p-2">Goa Tourism</h2>
               <p class="tech p-2">HTML CSS Bootstrap</p>
-
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 col-xs-12">
-            <div class="project-cards">
-              <img src="images/music.png" class="project-image" />
-              <h1 class="project-card-heading p-2 pb-0">Music Kit</h1>
-              <p class="tech p-2 pb-0">HTML CSS JavaScript AnimeJS</p>
             </div>
           </div>
 
@@ -211,6 +188,7 @@
               <p class="tech p-2 pb-0">HTML && CSS</p>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-2 col-xs-12">
             <div class="project-cards">
               <img src="images/form.png" class="project-image" />
@@ -218,6 +196,7 @@
               <p class="tech p-2 pb-0">HTML CSS</p>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-2 col-xs-12">
             <div class="project-cards">
               <img src="images/form.png" class="project-image" />
@@ -225,6 +204,7 @@
               <p class="tech p-2 pb-0">HTML CSS JavaScript AnimeJS</p>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-2 col-xs-12">
             <div class="project-cards">
               <img src="images/form.png" class="project-image" />
@@ -232,6 +212,7 @@
               <p class="tech p-2 pb-0">HTML CSS JavaScript AnimeJS</p>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-2 col-xs-12">
             <div class="project-cards">
               <img src="images/form.png" class="project-image" />
@@ -239,6 +220,7 @@
               <p class="tech p-2 pb-0">HTML CSS JavaScript AnimeJS</p>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-2 col-xs-12">
             <div class="project-cards">
               <img src="images/form.png" class="project-image" />
@@ -246,13 +228,7 @@
               <p class="tech p-2 pb-0">HTML CSS JavaScript AnimeJS</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-2 col-xs-12">
-            <div class="project-cards">
-              <img src="images/form.png" class="project-image" />
-              <h1 class="project-card-heading p-2 pb-0">Music Kit</h1>
-              <p class="tech p-2 pb-0">HTML CSS JavaScript AnimeJS</p>
-            </div>
-          </div>
+
           <div class="col-md-6 col-lg-2 col-xs-12">
             <div class="project-cards">
               <img src="images/form.png" class="project-image" />
@@ -263,81 +239,55 @@
 
         </div>
       </div>
-    </div>
-  </div>
 
   <!--End of Project section of My Portfolio -->
 
   <!--Footer stats-->
-  <div id="Footer">
-    <div class="footer-container">
-      <div class="container-fluid">
-        <div class="row text-center">
 
-          <div class="col-12 text-center pt-3 pb-5">
-            <img src="images/myImage.jpg" class="footer-image" alt="myImage" />
-          </div>
+  <div class="footer-container">
 
-          <div class="footer ml-lg-3 mb-5 d-flex flex-column  text-lg-center">
+    <div class="footer-image">
+      <img src="images/myImage1.jpg" alt="myImage" class="footer-image" />
+    </div>
+    <div class="contact-card">
 
-            <div class="cards col pb-lg-3 pb-2 ml-sm-4 pl-md-0">
-              <li class="icon mt-3 contact-list">
-                <div class="d-flex flex-row">
-                  <iconify-icon class=pl-3" icon="mdi:alternate-email" style="color: #4169e1;" width="30"
-                    height="30"></iconify-icon>
-                  <p class="contact-para pl-3 pl-lg-2 pt-md-0">ujjwal.ukj@gmail.com</p>
-                </div>
-              </li>
-            </div>
+      <div class="items-cards">
+        <iconify-icon class=pl-3" icon="mdi:alternate-email" style="color: black;" width="40"
+          height="40"></iconify-icon>
+        <p class="contact-para">ujjwal.ukj@gmail.com</p>
+      </div>
 
-            <div class="cards col pb-lg-3 pb-2 ml-sm-4 pl-md-0">
-              <li class="icon pt-0 mt-3  contact-list">
-                <a href="https://github.com/UjjwalJha131" target="_blank" id="links">
-                  <div class="d-flex flex-row">
-                    <iconify-icon class=pl-3" icon="mdi:linkedin" style="color: #4169e1;" width="30"
-                      height="30"></iconify-icon>
-                    <p class=" contact-para pl-3 pl-lg-2 pt-md-0 pt-1">LinkedIn</p>
-                  </div>
-                </a>
-              </li>
-            </div>
-
-            <div class="cards col pb-lg-3 pb-2 ml-sm-4 pl-md-0">
-              <li class="icon mb-2 mt-3  contact-list">
-                <a href="https://github.com/UjjwalJha131" target="_blank" id="links">
-                  <div class="d-flex flex-row">
-                    <iconify-icon class=pl-3" icon="mdi:github" style="color: #4169e1;" width="30"
-                      height="30"></iconify-icon>
-                    <p class=" contact-para pl-3 pl-lg-2 pt-md-0 pt-1">Github</p>
-                  </div>
-                </a>
-              </li>
-            </div>
-
-            <div class="cards col pb-lg-3 pb-2 ml-sm-4 pl-md-0">
-              <li class="icon mb-2 mt-3 contact-list">
-                <div class="d-flex flex-row">
-                  <iconify-icon class=pl-3" icon="mdi:address-marker" style="color: #4169e1;" width="30" height="30"
-                    class="pt-1 pt-md-0"></iconify-icon>
-                  <p class="contact-para pl-3 pl-lg-1 pt-1 pt-md-0">Goa</p>
-                  <iconify-icon icon="emojione-v1:flag-for-india" style="color: #4169e1;" width="30" height="30"
-                    class="pt-2 pt-md-1 pl-3"></iconify-icon>
-                </div>
-              </li>
-            </div>
-          </div>
+      <div class="items-cards">
+        <iconify-icon class=pl-3" icon="mdi:linkedin" style="color: black;" width="40"
+        height="40"></iconify-icon>
+        <p class="contact-para">LinkedIn</p>
+      </div>
 
 
-          <hr />
+      <div class="items-cards">
+        <iconify-icon class=pl-3" icon="mdi:github" style="color: black;" width="40"
+        height="40"></iconify-icon>
+        <p class="contact-para">Github</p>
+      </div>
 
-
-          <div class="col-12 d-flex flex-row justify-content-center mb-3" id="icon">
-            <iconify-icon icon="ic:round-copyright" style="color: #4169e1;" width="35" height="35"></iconify-icon>
-            <p class="copyright pl-2 pt-1">2022 by Ujjwal</p>
-          </div>
-        </div>
+      <div class="items-cards">
+        <iconify-icon class=pl-3" icon="mdi:address-marker" style="color: black;" width="40"
+        height="40"
+          class="pt-1 pt-md-0"></iconify-icon>
+        <p class="contact-para pl-3 pl-lg-1 pt-1 pt-md-0">Goa</p>
+        <iconify-icon icon="emojione-v1:flag-for-india" style="color: black;" width="30" height="30"
+          class="pt-2 pt-md-1 pl-3"></iconify-icon>
       </div>
     </div>
+
+    <div id="hr"></div>
+
+    <div class="copyright" id="icon">
+      <iconify-icon icon="ic:round-copyright" style="color: black;" width="35" height="35"></iconify-icon>
+      <p class="copyright-para">2022 by Ujjwal</p>
+    </div>
+
+
 
     <!--Footer ends-->
 
