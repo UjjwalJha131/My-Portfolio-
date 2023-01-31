@@ -31,7 +31,6 @@ body {
 .col-12 {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  max-width: 100%;
 }
 
 div.col-12 {
@@ -39,8 +38,13 @@ div.col-12 {
   padding-left: 0;
 }
 
+.navbar-dark .navbar-toggler-icon {
+  background-color: teal !important;
+  color: black !important;
+}
+
 nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
-  background-color: #4169e1 !important;
+  background-color: #ceeaee !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,7 +59,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
 
 a.nav-link {
   font-size: 1.4rem;
-  color: ghostwhite !important;
+  color: black !important;
   font-family: "sans-serif";
   transition: 0.2s ease-in-out;
   letter-spacing: 1.3px;
@@ -82,40 +86,69 @@ nav-link:active {
 /*Top-section with avatar start*/
 
 .Top-bg-cont {
-  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)),
-    url("https://cdn.pixabay.com/photo/2016/11/22/14/42/globe-1849404_960_720.png");
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 173, 168, 0.7),
+      rgba(1, 173, 168, 0.7)
+    ),
+    url("https://cdn.pixabay.com/photo/2015/08/11/22/43/teal-885329_960_720.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
-  background-position: 40% 40%;
-  height: 75vh;
+  background-position: center;
   min-width: 100vw;
-  width: 100%;
+  padding: 30px;
+  padding-top: 25px;
 }
 
-/*@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .Top-bg-cont {
-    background: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
   }
-}*/
 
-.Top-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  .Top-image {
+    display: none;
+  }
+}
+
+.bio {
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-top: 10px white;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .bio {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    width: 100vw;
+  }
 }
 
 .name {
   font-size: 2.7rem;
   font-weight: 500;
-  color: ghostwhite;
+  color: white;
   letter-spacing: 1.2px;
 }
 
 #ujjwal {
-  color: #4169e1;
-  font-size: 3.3rem;
+  color: white;
+  font-size: 3rem;
   font-weight: 400;
   letter-spacing: 1.2px;
   filter: brightness(1.5);
+  font-family: "Helvetica";
 }
 
 .pl-0 {
@@ -126,16 +159,29 @@ nav-link:active {
   font-size: 2.2rem;
   color: white;
   text-align: center;
-  padding: 0 10px;
   letter-spacing: 1.2px;
 }
 
 .fsd {
-  color: #4169e1;
+  color: white;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2px;
   filter: brightness(1.5);
+}
+
+.Top-image {
+  display: block;
+  height: 400px;
+  width: auto;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .Top-image {
+    display: none;
+  }
 }
 
 .cv-button {
@@ -169,7 +215,7 @@ nav-link:active {
   background-color: #4169e1;
   background-size: cover;
   min-width: 100vw;
-  width: 100%;
+
   border-bottom: 1px solid #000;
 }
 
@@ -177,7 +223,7 @@ nav-link:active {
   font-size: 2.3rem;
   font-weight: 500;
   font-family: "sans-serif";
-  color: rgb(0, 0, 0);
+  color: ghostwhite;
 }
 
 .Description {
@@ -191,29 +237,225 @@ nav-link:active {
 /*skill section starts*/
 
 .Skill-bg-container {
-  background-color: #4169e1;
+  background-color: #0c0404;
   background-size: cover;
   height: auto;
   border-bottom: 1px solid black;
   padding-bottom: 30px !important;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.skill-cards {
-  width: 120px;
-  height: auto;
-  padding: 5px;
-  margin: 13px -3px !important;
-  margin-bottom: 30px;
-  background-color: #4169e1;
-  border-radius: 15px;
-  transition: 0.3s ease-in-out;
-  box-shadow: 3px 3px 3px #000261, inset 2px 2px 10px #000261,
-    inset -3px -3px 10px #000261;
+.page-headings {
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.range-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ranges {
+  display: flex;
+  margin: 7px 0;
+  min-width: 45vw;
+}
+
+.range {
+  min-width: 40vw;
+  height: 25px;
+  text-align: center;
+  background: lightgray;
+  color: lavender;
+  letter-spacing: 1.3px;
+  margin: 2px 8px;
 }
 
 @media only screen and (max-width: 450px) {
-  .skill-cards{
-    width: 175px
+  .range {
+    width: 73vw;
+  }
+
+  .ranges {
+    margin: 10px 0;
+    margin-left: 0px;
+  }
+
+  .html {
+    min-width: 60vw;
+  }
+
+  .css {
+    min-width: 50vw;
+  }
+
+  .bootstrap {
+    min-width: 60vw;
+  }
+
+  .js {
+    min-width: 42vw;
+  }
+
+  .react {
+    min-width: 49vw;
+  }
+
+  .node {
+    min-width: 60vw;
+  }
+
+  .sql {
+    min-width: 65vw;
+  }
+
+  .mongo {
+    min-width: 58vw;
+  }
+
+  .python {
+    min-width: 36vw;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .range {
+    width: 85vw;
+  }
+
+  .ranges {
+    margin: 10px 0;
+    margin-left: 0px;
+  }
+
+  .html {
+    min-width: 66vw;
+  }
+
+  .css {
+    min-width: 59vw;
+  }
+
+  .bootstrap {
+    min-width: 66vw;
+  }
+
+  .js {
+    min-width: 59vw;
+  }
+
+  .react {
+    min-width: 55vw;
+  }
+
+  .node {
+    min-width: 66vw;
+  }
+
+  .sql {
+    min-width: 76vw;
+  }
+
+  .mongo {
+    min-width: 66vw;
+  }
+
+  .python {
+    min-width: 42vw;
+  }
+}
+
+.html {
+  width: 32vw;
+  height: 25px;
+  background: #d65637;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.css {
+  width: 28vw;
+  height: 25px;
+  background: #2f86b5;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bootstrap {
+  width: 32vw;
+  height: 25px;
+  background: #6f19e0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.js {
+  width: 24vw;
+  height: 25px;
+  background: #eed950;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.react {
+  width: 28vw;
+  height: 25px;
+  background: darkturquoise;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.node {
+  width: 32vw;
+  height: 25px;
+  background: #568938;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.sql {
+  width: 36vw;
+  height: 25px;
+  background: #4daade;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.mongo {
+  width: 32vw;
+  height: 25px;
+  background: #033632;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.python {
+  width: 20vw;
+  height: 25px;
+  background: #425c7a;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media only screen and (max-width: 450px) {
+  .skill-cards {
+    width: 175px;
   }
 }
 
@@ -256,7 +498,7 @@ nav-link:active {
 }
 
 @media only screen and (max-width: 450px) {
-  .project-cards{
+  .project-cards {
     height: auto;
   }
 }
@@ -266,7 +508,6 @@ nav-link:active {
 }
 
 .project-image {
-  width: 100%;
   height: 125px;
   border-radius: 15px;
   border-bottom: 1px solid black;
@@ -368,4 +609,5 @@ hr {
   font-size: 16px;
   color: ghostwhite;
 }
+
 /*Footer*/
