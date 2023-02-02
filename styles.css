@@ -39,12 +39,12 @@ div.col-12 {
 }
 
 .navbar-dark .navbar-toggler-icon {
-  background-color: teal !important;
+  background-color: black !important;
   color: black !important;
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
-  background-color: #ceeaee !important;
+  background-color: #64ecea !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -53,10 +53,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
 
 .logo {
   height: 50px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #094d4b;
 }
 
 a.nav-link {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: black !important;
   font-family: "Helvetica";
   transition: 0.2s ease-in-out;
@@ -69,7 +71,7 @@ a.nav-link:hover {
 }
 
 nav-link:active {
-  color: #ff0000;
+  color: ghostwhite;
 }
 
 .home-img {
@@ -97,7 +99,6 @@ nav-link:active {
   min-width: 100vw;
   padding: 30px;
   padding-top: 25px;
-
 }
 
 @media only screen and (max-width: 450px) {
@@ -107,10 +108,6 @@ nav-link:active {
     text-align: center;
     padding: 10px;
     padding-top: 30px;
-  }
-
-  .Top-image {
-    display: none;
   }
 }
 
@@ -130,8 +127,12 @@ nav-link:active {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 65px;
     width: 100vw;
+  }
+
+  .Top-image {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -140,7 +141,13 @@ nav-link:active {
   font-weight: 400;
   color: white;
   letter-spacing: 1.2px;
-  font-family: "Helvetica";
+  font-family: "Lobster";
+  transition: 0.6s ease-in-out;
+}
+
+.name:hover {
+  font-family: "Lobster";
+  color: black;
 }
 
 #ujjwal {
@@ -149,6 +156,11 @@ nav-link:active {
   letter-spacing: 1.2px;
   filter: brightness(1.5);
   font-family: "Lobster", cursive;
+  transition: 0.6s ease-in-out;
+}
+
+#ujjwal:hover {
+  color: ghostwhite;
 }
 
 .para {
@@ -199,7 +211,8 @@ nav-link:active {
   background-position: 0 0;
   border: none;
   outline: none;
-  box-shadow: inset 2px 2px 8px ghostwhite, inset -2px -2px 8px ghostwhite;
+  box-shadow: inset 2px 2px 8px rgba(1, 165, 169, 1),
+    inset -2px -2px 8px rgba(1, 165, 169, 1);
 }
 
 /*About me-section start*/
@@ -221,7 +234,7 @@ nav-link:active {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .main-heading {
     padding-left: 5px;
   }
@@ -244,7 +257,7 @@ nav-link:active {
 /*skill section starts*/
 
 .Skill-bg-container {
-  background-image: linear-gradient(180deg, #032930e6 80%, #64ecea),
+  background-image: linear-gradient(180deg, rgba(1, 169, 165, 0.8) 80%, #64ecea),
     url("https://cdn.pixabay.com/photo/2017/10/22/09/02/training-2877134_960_720.jpg");
   background-size: cover;
   height: auto;
@@ -304,7 +317,7 @@ nav-link:active {
   border-bottom-right-radius: 7px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   #page-heading {
     font-size: 28px;
     color: white;
@@ -364,7 +377,7 @@ nav-link:active {
   }
 }
 
-@media screen and (min-width: 451px) and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 992px) {
   .page-headings {
     font-size: 28px;
     color: white;
@@ -423,7 +436,7 @@ nav-link:active {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 993px) {
   .range-container {
     flex-direction: row;
   }
@@ -512,7 +525,10 @@ nav-link:active {
 /*Project section starts*/
 
 .My-projects-container {
-  background-image: linear-gradient(to bottom, #02a7a3 50%, #64ecea);
+  background-image: linear-gradient(to bottom,
+      rgba(4, 169, 165, 0.9) 50%,
+      #64ecea),
+    url("https://cdn.pixabay.com/photo/2014/06/16/23/40/teal-370129_960_720.png");
   background-size: cover;
   height: auto;
   padding: 30px;
@@ -542,7 +558,7 @@ nav-link:active {
   margin-bottom: 30px !important;
   background-color: transparent;
   border-radius: 15px;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   box-shadow: 5px 5px 5px rgb(2, 43, 43), inset 5px 5px 10px rgb(2, 43, 43),
     inset -5px -5px 10px rgb(2, 43, 43);
 }
@@ -646,6 +662,11 @@ a {
   align-items: center;
   padding: 0 30px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.items-cards:hover {
+  transform: translateY(-10%);
 }
 
 .contact-para {
