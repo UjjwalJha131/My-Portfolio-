@@ -44,13 +44,10 @@ body {
   font-size: 20px;
 }
 
-.form-signin .form-control:focus {
-  z-index: 1;
-}
+
 
 .form-signin input[type="text"] {
-  margin-bottom: -1px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: black;
   border: none;
   color: ghostwhite;
@@ -58,7 +55,7 @@ body {
 
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: black;
   border: none;
   color: ghostwhite;
@@ -79,4 +76,6 @@ img.mb-4 {
 
 .btn {
   width: 100px;
+  font-size: 18px;
+  letter-spacing: 0.7px;
 }
