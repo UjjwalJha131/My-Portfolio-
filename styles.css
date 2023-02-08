@@ -380,6 +380,10 @@ nav-link:active {
   .python {
     min-width: 36vw;
   }
+
+  .Github {
+    min-width: 50vw;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 992px) {
@@ -438,6 +442,10 @@ nav-link:active {
 
   .python {
     min-width: 42vw;
+  }
+
+  .Github {
+    min-width: 70vw;
   }
 }
 
@@ -521,6 +529,16 @@ nav-link:active {
   width: 20vw;
   height: 25px;
   background: #425c7a;
+  border-bottom-right-radius: 200px;
+  filter: brightness(1.5);
+}
+
+.Github {
+  width: 27vw;
+  height: 25px;
+  background: white;
+  color: black;
+  font-weight: 700;
   border-bottom-right-radius: 200px;
   filter: brightness(1.5);
 }
