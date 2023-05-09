@@ -5,7 +5,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Pacifico Regular"), local("Pacifico-Regular"),
-    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format("woff2");
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format("woff2");
   font-display: swap;
 }
 
@@ -38,17 +39,15 @@ div.col-12 {
   padding-left: 0;
 }
 
-.navbar-dark .navbar-toggler-icon {
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
   background-color: black !important;
-  color: black !important;
-}
-
-nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
-  background: black !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -57,17 +56,16 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
 }
 
 a.nav-link {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: ghostwhite !important;
   font-family: "Helvetica";
-  transition: 0.2s ease-in-out;
+  transition: all 0.4s ease-in;
   letter-spacing: 3px;
-  padding-top: 15px;
 }
 
 a.nav-link:hover {
-  font-size: 1.4rem;
-  filter: brightness(1.5);
+  border-radius: 10px;
+  color: red !important;
 }
 
 nav-link:active {
@@ -86,7 +84,11 @@ nav-link:active {
 /*Top-section with avatar start*/
 
 .Top-bg-cont {
-  background-image: linear-gradient(to bottom, rgba(24, 119, 242, 0.9), rgba(24, 119, 242, 0.9)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ),
     url("https://cdn.pixabay.com/photo/2023/03/23/07/50/flower-7871376_960_720.jpg");
   display: flex;
   flex-direction: column;
@@ -144,8 +146,6 @@ nav-link:active {
   transition: 0.6s ease-in-out;
 }
 
-
-
 #ujjwal {
   background-image: url("https://cdn.pixabay.com/photo/2017/12/03/20/31/background-2995826_960_720.png");
   -webkit-background-clip: text;
@@ -160,8 +160,6 @@ nav-link:active {
   transition: 0.6s ease-in-out;
 }
 
-
-
 .para {
   font-size: 2rem;
   color: white;
@@ -170,23 +168,34 @@ nav-link:active {
 }
 
 .fsd {
-  background-image: url("https://cdn.pixabay.com/photo/2017/02/10/03/12/winter-2054297_960_720.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_960_720.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   background-position: center;
-  color: white;
-  font-weight: bolder;
+  font-weight: bold;
   font-family: "lobster", "montserrat";
   font-size: 2.3rem;
   letter-spacing: 4px;
-  filter: brightness(2);
+  filter: brightness(5);
+}
+
+.avatar {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/05/22/12/26/web-5205244_960_720.jpg");
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 .Top-image {
   height: 150px;
   width: auto;
-  margin-top: 5rem;
   border-radius: 50%;
 }
 
@@ -206,7 +215,11 @@ nav-link:active {
   height: 35px;
   padding: 7px;
   background-color: transparent;
-  background-image: linear-gradient(to top left, transparent 50%, black 50%);
+  background-image: linear-gradient(
+    to top left,
+    transparent 50%,
+    rgb(6, 116, 212) 50%
+  );
   background-size: 200% 200%;
   background-position: 100% 100%;
   transition: 0.7s ease-in-out;
@@ -219,16 +232,18 @@ nav-link:active {
   background-position: 0 0;
   border: none;
   outline: none !important;
-  box-shadow: inset 2px 2px 8px ghostwhite,
-    inset -2px -2px 8px ghostwhite;
+  box-shadow: inset 2px 2px 8px ghostwhite, inset -2px -2px 8px ghostwhite;
 }
 
 /*About me-section start*/
 
 .About-Me-bg-container {
-  background-image: linear-gradient(to top,
-      rgba(24, 119, 242, 0.9)95%,
-      rgba(3, 52, 95, 1));
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 96%,
+      rgba(3, 52, 95, 1)
+    ),
+    url("https://cdn.pixabay.com/photo/2023/04/18/21/54/background-7936011_960_720.png");
   background-size: cover;
   min-width: 100vw;
   height: auto;
@@ -237,7 +252,7 @@ nav-link:active {
 }
 
 .main-heading {
-  font-size: 32px;
+  font-size: 28px;
   color: ghostwhite;
   padding-top: 8px;
   padding-bottom: 10px;
@@ -248,18 +263,21 @@ nav-link:active {
 
 @media only screen and (max-width: 500px) {
   .main-heading {
+    font-size: 24px;
     padding-left: 5px;
+    padding-top: 2rem;
   }
 
   .Description {
     margin-left: -15px !important;
     font-weight: 500;
+    font-size: 18px !important;
   }
 }
 
 .Description {
   padding-left: 20px;
-  font-size: 20px;
+  font-size: 18px;
   color: ghostwhite;
   font-weight: 400;
   letter-spacing: 1px;
@@ -267,12 +285,125 @@ nav-link:active {
   letter-spacing: 0.7px;
 }
 
+/*services section starts*/
+
+.services-bg-container {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 98%,
+      rgba(3, 52, 95, 1)
+    ),
+    url("https://cdn.pixabay.com/photo/2023/04/18/21/54/background-7936011_960_720.png");
+  background-size: cover;
+  min-width: 100vw;
+  height: auto;
+  padding: 33px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.ser-heading {
+  font-size: 28px;
+  color: ghostwhite;
+  padding-bottom: 10px;
+  font-family: "montserrat";
+  letter-spacing: 1.5px;
+  margin-top: -23px;
+}
+
+.ser-card {
+  background-image: linear-gradient(rgba(0,0,0,0.9) , rgba(0,0,0,0.9));
+  display: flex;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  width: 350px !important;
+  height: 512px;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 5px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px rgb(0, 0, 0), inset 5px 5px 8px ghostwhite,
+  inset -5px -5px 8px ghostwhite;
+}
+
+.ser-image {
+  position: absolute;
+  top: 0 !important;
+  width: 350px;
+  height: 230px;
+}
+
+#text {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 15px;
+  width: 350px;
+  height: 280px;
+ 
+}
+
+.card-heading {
+  font-size: 25px;
+  font-family: lobster, montserrat;
+  letter-spacing: 3px;
+  color: rgb(3, 137, 255);
+  text-align: center;
+}
+
+.ser-para {
+  position: absolute;
+  bottom: 0 !important;
+  font-size: 19px;
+  font-family: serif;
+  letter-spacing: 1.5px;
+  color: ghostwhite;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .ser-heading {
+    font-size: 24px;
+    margin-left: 15px !important;
+    padding-top: 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .ser-card {
+    object-fit: contain;
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .ser-heading {
+    font-size: 28px;
+    margin-left: 33px !important;
+    padding-top: 1rem;
+  }
+
+}
+
+
 /*skill section starts*/
 
 .Skill-bg-container {
-  background-image: linear-gradient(to top,
-      rgba(24, 119, 242, 0.9)95%,
-      rgba(3, 52, 95, 0.5));
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 97%,
+      rgba(3, 52, 95, 1)
+    ),
+    url("https://cdn.pixabay.com/photo/2022/04/21/14/46/water-7147662_960_720.png");
   background-size: cover;
   height: auto;
   padding: 10px 0 !important;
@@ -282,10 +413,10 @@ nav-link:active {
 }
 
 #page-heading {
-  font-size: 32px;
+  font-size: 28px;
   color: ghostwhite;
   padding-left: 32px;
-  padding-top: 8px;
+  padding-top: 15px;
   font-family: "montserrat";
   font-weight: normal;
   letter-spacing: 1px;
@@ -336,12 +467,12 @@ nav-link:active {
   border-bottom-right-radius: 7px;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #page-heading {
-    font-size: 28px;
+    font-size: 24px;
     color: white;
-    padding-top: 30px;
     margin-left: -10px;
+    padding-top: 2rem;
   }
 
   .range-container {
@@ -402,9 +533,9 @@ nav-link:active {
 
 @media screen and (min-width: 501px) and (max-width: 992px) {
   .page-headings {
-    font-size: 28px;
+    font-size: 26px;
     color: white;
-    padding-top: 30px;
+    padding-top: 3rem !important;
     padding-left: 30px;
   }
 
@@ -573,10 +704,12 @@ nav-link:active {
 /*Project section starts*/
 
 .My-projects-container {
-  background-image: linear-gradient(to top,
-      rgba(24, 119, 242, 0.9)98%,
-      rgba(3, 52, 95, 1)),
-    url("https://cdn.pixabay.com/photo/2017/02/10/03/12/winter-2054297_960_720.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 99%,
+      rgba(3, 52, 95, 1)
+    ),
+    url("https://cdn.pixabay.com/photo/2015/08/11/22/43/teal-885329_960_720.png");
   background-size: cover;
   height: auto;
   padding: 30px;
@@ -587,9 +720,9 @@ nav-link:active {
 }
 
 .page-headings2 {
-  font-size: 32px;
+  font-size: 28px;
   color: ghostwhite;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   padding-left: 8px;
   font-family: "montserrat";
   font-weight: normal;
@@ -615,7 +748,7 @@ nav-link:active {
 
 @media only screen and (max-width: 450px) {
   .project-cards {
-    height: auto;
+    height: 350px;
     padding-bottom: 10px;
   }
 
@@ -625,34 +758,35 @@ nav-link:active {
 
   .page-headings2 {
     margin-left: -18px;
-
+    padding-top: 2rem;
+    font-size: 24px;
   }
 }
 
 .project-cards:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 .project-image {
   width: 100%;
   height: 150px;
   border-radius: 15px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
 }
 
 .project-card-heading {
   font-size: 1.3rem;
   font-weight: 500;
-  color: black;
+  color: rgb(3, 137, 255);
   text-align: center;
   letter-spacing: 1.5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid red;
   border-radius: 20px;
 }
 
 .tech {
   color: ghostwhite;
-  font-size: 17px;
+  font-size: 15px;
   word-spacing: 3px;
   margin-left: 7px;
   text-align: left;
@@ -660,10 +794,12 @@ nav-link:active {
 }
 
 span.visit {
-  float: bottom;
-  color: black;
+  position: absolute;
+  bottom: 10px;
+  color: red;
   font-style: bold;
   font-size: 16px;
+  bottom: 55px;
 }
 
 a {
@@ -673,9 +809,12 @@ a {
 /*Footer*/
 
 .footer-container {
-  background-image: linear-gradient(to top,
-      rgba(24, 119, 242, 0.9)95%,
-      rgba(3, 52, 95, 1)),url("https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462428_960_720.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 97%,
+      rgba(3, 52, 95, 1)
+    ),
+    url("https://cdn.pixabay.com/photo/2019/07/19/12/45/connection-4348764_960_720.png");
   background-size: cover;
   width: 100vw;
   padding: 30px;
@@ -730,13 +869,13 @@ a {
   font-size: 18px;
   filter: brightness(2);
   color: white;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.5px;
 }
 
 #hr {
   width: 100vw;
   height: 2px;
-  background-color: black;
+  background-color: rgba(3, 52, 95, 1);
   margin-top: 50px;
 }
 
@@ -751,6 +890,7 @@ a {
   color: ghostwhite;
   margin-top: 10px;
   padding-left: 10px;
+  letter-spacing: 1px;
 }
 
 /*Footer*/

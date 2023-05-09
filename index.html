@@ -13,7 +13,8 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark 
+  fixed-top">
     <div class="icon-container items justify-content-center">
       <a class="navbar-brand pl-0 ml-0 head text-center" href="#">
         <img src="images/mylogo.png" alt="logo" class="logo">
@@ -25,10 +26,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-link active" href="#"><iconify-icon icon="material-symbols:home" style="color: red; " width="27"
-            height="28""></iconify-icon><span
+        <a class="nav-link active" href="#"><iconify-icon icon="material-symbols:home" style="color: red; " width="25"
+            height="25""></iconify-icon><span
             class=" sr-only">(current)</span></a>
         <a class="nav-link active" href="#About">About Me<span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="#Services">Services<span class="sr-only">(current)</span></a>
         <a class="nav-link active" href="#Skills">Skills<span class="sr-only">(current)</span></a>
         <a class="nav-link active" href="#Projects">Projects<span class="sr-only">(current)</span></a>
       </div>
@@ -38,7 +40,7 @@
   <!--  top Section with avatar start -->
 
   <div class="Top-bg-cont">
-    <div class="">
+    <div class="avatar">
       <img src="images/myImage1.jpg" alt="avatar" class="Top-image" />
     </div>
     <div class="bio ">
@@ -48,130 +50,173 @@
         </h1>
         <p class="para"><span class="fsd">A Web Developer</span></p>
         <div class="btn">
-          <a href="signup.html"><button class="cv-button">Contact Me</button></a>
-          <button class="cv-button">Download CV</button>
+          <a href="signup.html">
+            <button class="cv-button">Contact Me</button>
+          </a>
+          <a href="blue-resume.pdf" download="blue-resume.pdf">
+            <button class="cv-button">Download CV</button>
+          </a>
         </div>
       </div>
     </div>
+  </div>
+
+  <!--  top Section with avatar end -->
+
+  <!--  About Me Section of My Portfolio -->
+  <div id="About">
+    <div class="About-Me-bg-container">
+
+      <h1 class="main-heading">
+        About Me :
+      </h1>
+
+      <p class="Description">
+        My name is Ujjwal. I am a beginner Web Developer and looking for my first break in the field. I have an
+        Industry
+        ready Full Stack Developer certificate from NxtWave Disruptive Technologies Private Limited.
+      </p>
+      <p class="Description">
+        I am a dedicated person with love for technology. I enjoy reading and the knowledge and perspective that my
+        reading gives me have strenghten my technical skills.
+      </p>
+      <p class="Description">I have worked on a lot of real world projects. I have also completed my Responsive Web
+        Design and Front End Library Certification offered by FreeCodeCamp.
+      </p>
     </div>
+  </div>
 
-    <!--  top Section with avatar end -->
+  <!--End of  About Me Section of My Portfolio -->
 
-    <!--  About Me Section of My Portfolio -->
-    <div id="About">
-      <div class="About-Me-bg-container">
+  <!--Services Section of My Portfolio -->
 
-        <h1 class="main-heading">
-          About Me :
-        </h1>
-
-        <p class="Description">
-          My name is Ujjwal. I am a beginner Web Developer and looking for my first break in the field. I have an
-          Industry
-          ready Full Stack Developer certificate from NxtWave Disruptive Technologies Private Limited.
-        </p>
-        <p class="Description">
-          I am a dedicated person with love for technology. I enjoy reading and the knowledge and perspective that my
-          reading gives me have strenghten my technical skills.
-        </p>
-        <p class="Description">I have worked on a lot of real world projects. I have also completed my Responsive Web
-          Design and Front End Library Certification offered by FreeCodeCamp.
-        </p>
-      </div>
-    </div>
-
-    <!--End of  About Me Section of My Portfolio -->
-
-    <!--Skills Section of My Portfolio -->
-
-    <div id="Skills">
-
-      <div class="Skill-bg-container">
-
-        <h1 id="page-heading">Skills & Tools I Know :</h1>
-
-        <div class="range-container">
-          <div class="section1">
-
-            <div class="ranges">
-              <iconify-icon icon="vscode-icons:file-type-html" style="color: red;" width="30"
-                height="30"></iconify-icon>
-              <div class="range">
-                <div class="html">HTML</div>
-              </div>
-            </div>
-
-            <div class="ranges ">
-              <iconify-icon icon="vscode-icons:file-type-css" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="css">CSS</div>
-              </div>
-            </div>
-
-            <div class="ranges">
-              <iconify-icon icon="logos:bootstrap" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="bootstrap">Bootstrap</div>
-              </div>
-            </div>
-
-            <div class="ranges">
-              <iconify-icon icon="skill-icons:javascript" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="js">JavaScript</div>
-              </div>
-            </div>
-
-
-            <div class="ranges">
-              <iconify-icon icon="logos:react" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="react">React</div>
-              </div>
-            </div>
-
+  <div id="Services">
+    <div class="services-bg-container">
+      <h1 class="ser-heading ">Services :</h1>
+      <div class="card-container">
+        
+        <div class="ser-card">
+          <img class="ser-image" src="https://cdn.educba.com/academy/wp-content/uploads/2020/07/psd-9-9-5-3.jpg" alt="image">
+          <div id="text">
+            <h3 class="card-heading">Static Websites</h3>
+            <p class="ser-para"> Static web pages are made of fixed code, and unless the site developer makes changes, nothing will change on the page. Static sites are like a brochure, it can't just change itself. For example: A product landing page.</p>
           </div>
-          <div class="section2">
-            <div class="ranges">
-              <iconify-icon icon="skill-icons:nodejs-dark" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="node">NodeJs</div>
-              </div>
-            </div>
+        </div>
 
-            <div class="ranges">
-              <iconify-icon icon="skill-icons:sqlite" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="sql">SQL</div>
-              </div>
-            </div>
+        <div class="ser-card">
+          <img class="ser-image" src="https://www.onely.com/wp-content/uploads/blog/2021/responsive-web-design/0-responsive-web-design-hero-image.jpg" alt="image">
+          <div id="text">
+            <h3 class="card-heading">Responsive Websites</h3>
+            <p class="ser-para">Responsive web design (RWD) is a web development approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it.</p>
+          </div>
+        </div>
 
-            <div class="ranges">
-              <iconify-icon icon="skill-icons:mongodb" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="mongo">MongoDB</div>
-              </div>
-            </div>
-
-            <div class="ranges">
-              <iconify-icon icon="skill-icons:python-dark" style="color: red;" width="30" height="30"></iconify-icon>
-              <div class="range">
-                <div class="python">Python</div>
-              </div>
-            </div>
-
-            <div class="ranges">
-              <iconify-icon icon="icon-park:github" width="30" height="30" style="color: red;"style="color: red;"></iconify-icon>
-              <div class="range">
-                <div class="Github">Github</div>
-              </div>
-            </div>
+        <div class="ser-card">
+          <img class="ser-image" src="https://www.quantumversity.com/wp-content/uploads/2020/11/full-stack-web-developer.jpg" alt="image">
+          <div id="text">
+            
+            <h3 class="card-heading">Full Stack Websites</h3>
+            <p class="ser-para">Full stack refers to the end-to-end application software, including the front end and back end. The front end consists of the user interface, and the back end takes care of the business logic and application workflows.</p>
           </div>
         </div>
 
       </div>
     </div>
   </div>
+
+
+  <!--End of Services Section of My Portfolio -->
+
+  <!--Skills Section of My Portfolio -->
+
+  <div id="Skills">
+
+    <div class="Skill-bg-container">
+
+      <h1 id="page-heading">Skills & Tools I Know :</h1>
+
+      <div class="range-container">
+        <div class="section1">
+
+          <div class="ranges">
+            <iconify-icon icon="vscode-icons:file-type-html" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="html">HTML</div>
+            </div>
+          </div>
+
+          <div class="ranges ">
+            <iconify-icon icon="vscode-icons:file-type-css" style="color: white b;" width="30"
+              height="30"></iconify-icon>
+            <div class="range">
+              <div class="css">CSS</div>
+            </div>
+          </div>
+
+          <div class="ranges">
+            <iconify-icon icon="logos:bootstrap" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="bootstrap">Bootstrap</div>
+            </div>
+          </div>
+
+          <div class="ranges">
+            <iconify-icon icon="skill-icons:javascript" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="js">JavaScript</div>
+            </div>
+          </div>
+
+
+          <div class="ranges">
+            <iconify-icon icon="logos:react" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="react">React</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="section2">
+          <div class="ranges">
+            <iconify-icon icon="skill-icons:nodejs-dark" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="node">NodeJs</div>
+            </div>
+          </div>
+
+          <div class="ranges">
+            <iconify-icon icon="skill-icons:sqlite" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="sql">SQL</div>
+            </div>
+          </div>
+
+          <div class="ranges">
+            <iconify-icon icon="skill-icons:mongodb" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="mongo">MongoDB</div>
+            </div>
+          </div>
+
+          <div class="ranges">
+            <iconify-icon icon="skill-icons:python-dark" style="color: red;" width="30" height="30"></iconify-icon>
+            <div class="range">
+              <div class="python">Python</div>
+            </div>
+          </div>
+
+          <div class="ranges">
+            <iconify-icon icon="icon-park:github" width="30" height="30" style="color: white;"
+              style="color: red;"></iconify-icon>
+            <div class="range">
+              <div class="Github">Github</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- End of Skills Section of My Portfolio -->
 
   <!-- Project section of My Portfolio -->
@@ -184,6 +229,17 @@
       <h1 class="page-headings2">My Projects :</h1>
 
       <div class="card-container">
+
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <a href="https://ujjwaljha131.github.io/My-Portfolio-/" target="_blank">
+            <div class="project-cards">
+              <img src="images/portfolio.png" class="project-image" />
+              <h1 class="project-card-heading p-2 pb-0">Portfolio Website</h1>
+              <p class="tech p-2 pb-0">A simple portfolio website made using HTML, CSS & Bootstrap.<br><span
+                  class="visit">Click to visit...</span></p>
+            </div>
+          </a>
+        </div>
 
 
         <div class="col-md-6 col-lg-3 col-xs-12">
@@ -198,27 +254,13 @@
           </a>
         </div>
 
-
         <div class="col-md-6 col-lg-3 col-xs-12">
-          <a href="https://ujjwaljha131.github.io/My-Portfolio-/" target="_blank">
-            <div class="project-cards">
-              <img src="images/portfolio.png" class="project-image" />
-              <h1 class="project-card-heading p-2 pb-0">Portfolio Website</h1>
-              <p class="tech p-2 pb-0">A simple portfolio website made using HTML, CSS & Bootstrap.<br><span
-                  class="visit">Click to visit...</span></p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <a href="https://ujjwaljha131.github.io/GoaTourism/" target="_blank">
+          <a href="https://ujjwaljha131.github.io/WeatherApplication/" target="_blank">
             <div class="project-cards">
               <img src="images/weather.png" class="project-image" />
               <h1 class="project-card-heading p-2 pb-0">Weather App</h1>
-              <p class="tech p-2 pb-0">It is a weather app made by using HTML, CSS & JavaScript. It tells current
-                weather
-                of
-                almost every city.<br><span class="visit">Click to visit...</span></p>
+              <p class="tech p-2 pb-0">It is a weather app made by using HTML, CSS & JavaScript.<br><span
+                  class="visit">Click to visit...</span></p>
             </div>
           </a>
         </div>
@@ -292,27 +334,31 @@
     <div class="contact-card">
 
       <div class="items-cards">
-        <iconify-icon class=pl-3" icon="mdi:alternate-email" style="color: black;" width="30"
-          height="40"></iconify-icon>
+        <iconify-icon class=pl-3" icon="mdi:alternate-email" style="color: red;" width="30" height="40"></iconify-icon>
         <p class="contact-para">ujjwal.ukj@gmail.com</p>
       </div>
 
       <div class="items-cards">
-        <iconify-icon class=pl-3" icon="mdi:linkedin" style="color: black;" width="30" height="40"></iconify-icon>
-        <p class="contact-para">LinkedIn</p>
+        <iconify-icon class=pl-3" icon="mdi:linkedin" style="color: red;" width="30" height="40"></iconify-icon>
+        <a href="https://www.linkedin.com/in/ujjwal-kumar-jha-a981bb235/" target="_blank">
+          <p class="contact-para">LinkedIn</p>
+        </a>
       </div>
 
 
       <div class="items-cards">
-        <iconify-icon icon="mdi:github" style="color: black;" width="30" height="40"></iconify-icon>
-        <p class="contact-para">Github</p>
+
+        <iconify-icon class=pl-3" icon="mdi:github" style="color: red;" width="30" height="40"></iconify-icon>
+        <a href="https://github.com/UjjwalJha131?tab=repositories" target="_blank">
+          <p class="contact-para">Github</p>
+        </a>
       </div>
 
       <div class="items-cards">
-        <iconify-icon class=pl-3" icon="mdi:address-marker" style="color: black;" width="30" height="40"
+        <iconify-icon class=pl-3" icon="mdi:address-marker" style="color: red;" width="30" height="40"
           class="pt-1 pt-md-0"></iconify-icon>
         <p class="contact-para  pl-lg-1 pt-1 pt-md-0">Goa</p>
-        <iconify-icon icon="emojione-v1:flag-for-india" style="color: black;" width="20" height="30"
+        <iconify-icon icon="emojione-v1:flag-for-india" style="color: red;" width="20" height="30"
           class="pt-2 pt-md-1 pl-3"></iconify-icon>
       </div>
     </div>
@@ -320,8 +366,8 @@
     <div id="hr"></div>
 
     <div class="copyright" id="icon">
-      <iconify-icon icon="ic:round-copyright" style="color: black;" width="25" height="35"></iconify-icon>
-      <p class="copyright-para">2022 by Ujjwal</p>
+      <iconify-icon icon="ic:round-copyright" style="color: red;" width="25" height="35"></iconify-icon>
+      <p class="copyright-para">2023 by Ujjwal</p>
     </div>
 
 
@@ -339,6 +385,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e06d11c316.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
