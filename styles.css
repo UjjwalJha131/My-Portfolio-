@@ -100,7 +100,7 @@ nav-link:active {
   min-width: 100vw;
   padding: 30px;
   padding-top: 25px;
-  border: none;
+  border-bottom: 2px solid rgb(1, 68, 126);
 }
 
 @media only screen and (max-width: 450px) {
@@ -250,6 +250,7 @@ nav-link:active {
   height: auto;
   padding: 15px;
   text-align: left;
+  border-bottom: 2px solid rgb(1, 68, 126);
 }
 
 .main-heading {
@@ -302,6 +303,7 @@ nav-link:active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  border-bottom: 2px solid rgb(1, 68, 126);
 }
 
 #page-heading {
@@ -608,6 +610,7 @@ nav-link:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 2px solid rgb(1, 68, 126);
 }
 
 .carousel {
@@ -661,6 +664,7 @@ nav-link:active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  border-bottom: 2px solid rgb(1, 68, 126);
 }
 
 .page-headings2 {
@@ -766,6 +770,7 @@ a {
   min-width: 100vw;
   height: auto;
   padding: 33px 0;
+  border-bottom: 2px solid rgb(1, 68, 126);
 }
 
 .card-container {
@@ -929,7 +934,7 @@ a {
 #hr {
   width: 100vw;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color:  rgb(0, 0, 0);
   margin-top: 50px;
 }
 
