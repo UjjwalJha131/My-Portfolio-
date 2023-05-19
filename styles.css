@@ -39,7 +39,7 @@ div.col-12 {
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('images/matrix.jpg') !important;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8))!important;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
