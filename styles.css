@@ -670,14 +670,14 @@ nav-link:active {
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   margin: auto;
 }
 
 .project-cards {
   margin: auto;
   width: 300px;
-  height: 350px;
+  height: 400px;
   margin-bottom: 30px !important;
   background-color: transparent;
   border-radius: 15px;
@@ -688,7 +688,7 @@ nav-link:active {
 
 @media only screen and (max-width: 600px) {
   .project-cards {
-    height: 350px;
+    height: auto;
     padding-bottom: 10px;
     margin: auto;
   }
