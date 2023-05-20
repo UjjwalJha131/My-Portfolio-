@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lobster&family=Poppins:ital,wght@0,500;0,600;1,400&display=swap");
 
 @font-face {
-  font-family: "Pacifico";
+  font-family: 'Pacifico';
   font-style: normal;
   font-weight: 400;
-  src: local("Pacifico Regular"), local("Pacifico-Regular"),
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
     url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
-      format("woff2");
+      format('woff2');
   font-display: swap;
 }
 
@@ -44,7 +44,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
   background-size: cover;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
 }
 
@@ -147,13 +147,12 @@ nav-link:active {
   font-weight: 600;
   font-family: "montserrat";
   transition: 0.4s ease-in-out;
-}
-
-#ujjwal:hover {
   color: rgb(0, 126, 255);
 }
 
-.para {
+
+
+#element {
   font-size: 2rem;
   color: white;
   text-align: center;
@@ -169,8 +168,9 @@ nav-link:active {
   font-weight: bold;
   font-family: "lobster", "montserrat";
   font-size: 2.3rem;
-  letter-spacing: 4px;
+  letter-spacing: 10px;
   filter: brightness(5);
+
 }
 
 .avatar {
@@ -187,7 +187,7 @@ nav-link:active {
 }
 
 .Top-image {
-  height: 120px;
+  height: 135px;
   width: auto;
   border-radius: 50%;
   position: inherit;
@@ -205,7 +205,7 @@ nav-link:active {
   outline: none;
   border: none;
   border-radius: 8px;
-  margin: 0 5px;
+  margin: 20px 5px;
   width: 135px;
   height: 38px;
   padding: 7px;
